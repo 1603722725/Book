@@ -1,5 +1,6 @@
 package com.order;
 import com.order.utils.OrderUtils;
+import com.order.utils.VerificationCode;
 import org.apache.commons.lang.StringUtils;
 
 /**
@@ -10,11 +11,13 @@ public class aDemo {
     public static void main(String[] args) {
 //        String orderCode = OrderUtils.getOrderCode(1);
 //        System.out.println(orderCode);
-        String[] arr = new String[3];
-        arr[0] = "1";
-        arr[1] = "2";
-        arr[2] = "3";
-        String a = StringUtils.join(arr,",");
-        System.out.println(a);
+//        String[] arr = new String[3];
+//        arr[0] = "1";
+//        arr[1] = "2";
+//        arr[2] = "3";
+//        String a = StringUtils.join(arr,",");
+//        System.out.println(a);
+        VerificationCode verificationCode = new VerificationCode();
+        System.out.println(verificationCode);
     }
 }

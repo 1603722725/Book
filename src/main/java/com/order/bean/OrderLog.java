@@ -10,8 +10,8 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderLog implements Serializable{
-  private static final long serialVersionUID = 1L;
-  private long id;
+  private static final Long serialVersionUID = 1L;
+  private Long id;
   private String username;
   private String bookName;
   private double bookPrice;

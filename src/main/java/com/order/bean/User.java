@@ -10,17 +10,18 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User implements Serializable{
-  private static final long serialVersionUID = 1L;
-  private long id;
+  private static final Long serialVersionUID = 1L;
+  private Long id;
   private String username;
   private String password;
   private String salt;
-  private long disable;
+  private Long disable;
   private String realName;
   private String userClass;
-  private long roleId;
+  private Long roleId;
   private double balance;
-  private long majorId;
+  private Long majorId;
+  private Long deptId;
   private String email;
   private Date createTime;
 }

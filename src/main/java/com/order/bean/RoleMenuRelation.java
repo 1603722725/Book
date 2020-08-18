@@ -10,8 +10,8 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RoleMenuRelation implements Serializable{
-  private static final long serialVersionUID = 1L;
-  private long id;
-  private long roleId;
-  private long menuId;
+  private static final Long serialVersionUID = 1L;
+  private Long id;
+  private Long roleId;
+  private Long menuId;
 }

@@ -10,12 +10,12 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Course implements Serializable{
-  private static final long serialVersionUID = 1L;
-  private long id;
+  private static final Long serialVersionUID = 1L;
+  private Long id;
   private String courseNo;
   private String courseName;
-  private long bookId;
-  private long majorId;
+  private Long bookId;
+  private Long majorId;
   private String courseType;
   private Date createTime;
 }

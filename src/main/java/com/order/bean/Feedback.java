@@ -10,8 +10,8 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Feedback implements Serializable{
-  private static final long serialVersionUID = 1L;
-  private long id;
+  private static final Long serialVersionUID = 1L;
+  private Long id;
   private String type;
   private String details;
   private String username;

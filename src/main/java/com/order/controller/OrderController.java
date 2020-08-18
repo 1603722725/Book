@@ -13,19 +13,25 @@ import java.util.List;
  * @author wl
  * @Data 2020-08-11 10:14
  */
-
 @RestController
-@RequestMapping("/order")
+@RequestMapping("order")
 public class OrderController {
 
     @Autowired
     private OrderService orderService;
     @RequestMapping(value = "/getOrder",method = RequestMethod.POST)
-    public Result GetOrder(List list){
+    public Result GetOrder(){
+        List<Long> list = new ArrayList<>();
+        list.add((long) 1);
+        list.add((long) 2);
         Result result = new Result();
         result = orderService.getInformations(list);
         return result;
     }
-
-
+    @RequestMapping(value = "/all",method = RequestMethod.POST)
+    public Result selectAll(){
+        Result result = new Result();
+        result = orderService.selectAll();
+        return result;
+    }
 }

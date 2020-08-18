@@ -8,8 +8,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BookLog implements Serializable{
-  private static final long serialVersionUID = 1L;
-  private long id;
+  private static final Long serialVersionUID = 1L;
+  private Long id;
   private String username;
   private String realName;
   private String courseNo;

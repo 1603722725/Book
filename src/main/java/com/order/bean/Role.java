@@ -10,8 +10,8 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Role implements Serializable{
-  private static final long serialVersionUID = 1L;
-  private long id;
+  private static final Long serialVersionUID = 1L;
+  private Long id;
   private String roleName;
   private String roleZh;
 }

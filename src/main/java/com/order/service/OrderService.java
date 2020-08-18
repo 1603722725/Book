@@ -1,6 +1,7 @@
 package com.order.service;
 
 import com.order.constant.Result;
+import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.List;
 import java.util.Map;
@@ -11,5 +12,5 @@ import java.util.Map;
  */
 public interface OrderService {
     Result getInformations(List<Long> ids);
-
+    Result selectAll();
 }

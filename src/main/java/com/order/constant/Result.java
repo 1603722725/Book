@@ -14,7 +14,9 @@ public class Result<T> {
 
     public Result() {
     }
-
+    public static Result error(String msg) {
+        return new Result(500, msg,null);
+    }
     protected Result(long code, String message, T data) {
         this.code = code;
         this.message = message;

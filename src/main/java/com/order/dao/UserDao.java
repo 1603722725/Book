@@ -1,5 +1,7 @@
 package com.order.dao;
 
+import com.order.bean.User;
+
 import java.util.Map;
 
 /**
@@ -7,5 +9,5 @@ import java.util.Map;
  * @Data 2020-08-17
  */
 public interface UserDao {
-    Map<String,Object> selectOne();
+    User selectOne();
 }

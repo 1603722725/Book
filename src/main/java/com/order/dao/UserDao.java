@@ -9,5 +9,6 @@ import java.util.Map;
  * @Data 2020-08-17
  */
 public interface UserDao {
-    User selectOne();
+    User selectOne(String userName);
+    int insert(User user);
 }

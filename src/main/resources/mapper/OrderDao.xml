@@ -4,7 +4,7 @@
     <resultMap id="BaseResultMap" type="com.order.bean.Order" >
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
-        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="user_name" property="username" jdbcType="VARCHAR" />
         <result column="real_name" property="realName" jdbcType="VARCHAR" />
         <result column="user_class" property="userClass" jdbcType="VARCHAR"/>
         <result column="course_no" property="courseNo" jdbcType="VARCHAR" />
@@ -13,7 +13,8 @@
         <result column="Order_time" property="orderTime" jdbcType="DATE"/>
     </resultMap>
     <sql id="Base_Column_List" >
-    id, order_no, username, real_name, user_class, course_no, book_name, book_price, order_time
+    id, order_no as orderNo, user_name as userName, real_name as realName, user_class as userClass,
+    course_no as courseNo, book_name as bookName, book_price as bookPrice, order_time as orderTime
     </sql>
     <select id="queryByList" resultMap="BaseResultMap">
     SELECT * FROM `order` WHERE id in

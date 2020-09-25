@@ -1,5 +1,6 @@
 package com.order.bean;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,16 +13,16 @@ import java.util.*;
 public class User implements Serializable{
   private static final Long serialVersionUID = 1L;
   private Long id;
-  private String username;
+  private String userName;
   private String password;
   private String salt;
-  private Long disable;
+  private Integer disable;
   private String realName;
   private String userClass;
   private Long roleId;
   private double balance;
   private Long majorId;
-  private Long deptId;
   private String email;
+  @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
   private Date createTime;
 }

@@ -1,5 +1,6 @@
 package com.order.bean;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import java.util.Date;
 import lombok.Data;
@@ -17,5 +18,6 @@ public class Course implements Serializable{
   private Long bookId;
   private Long majorId;
   private String courseType;
+  @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
   private Date createTime;
 }

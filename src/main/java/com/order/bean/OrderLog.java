@@ -1,5 +1,6 @@
 package com.order.bean;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,5 +17,6 @@ public class OrderLog implements Serializable{
   private String bookName;
   private double bookPrice;
   private String operation;
+  @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
   private Date operationTime;
 }
